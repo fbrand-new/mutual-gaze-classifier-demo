@@ -208,3 +208,7 @@ RUN source /home/user/robotology-superbuild/build/install/share/robotology-super
 # # RUN yarp namespace /cer04
 RUN source /home/user/robotology-superbuild/build/install/share/robotology-superbuild/setup.sh && \
     yarp conf 192.168.100.10 10000
+
+# Add superbuild setup in bashrc
+RUN echo "source /home/user/robotology-superbuild/build/install/share/robotology-superbuild/setup.sh" >> ~/.bashrc
+
